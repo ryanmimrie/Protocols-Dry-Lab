@@ -1,9 +1,8 @@
 # BEAST Memory Limit Fix
-BEAST scripts (e.g., treeannotator) have hard-coded RAM limits that cause large files to hang indefinitely. To fix this, the executables can be edited:
+BEAST scripts (e.g., treeannotator) have hard-coded RAM limits that cause large files to hang indefinitely. To fix this, the executables can be edited to change the -Xmx argument of the java call:
 
 ## The original file (4GB limit)
 ```bash
-(base) ryan@bioinfo:~/BEASTv10.5.0/bin$ cat ./treeannotator 
 #!/bin/sh
 
 if [ -z "$BEAST" ]; then
@@ -34,7 +33,6 @@ java -Xms64m -Xmx4096m -Djava.library.path="$BEAST_LIB" -cp "$BEAST_LIB/beast.ja
 
 ## Updated file (32GB limit)
 ```bash
-(base) ryan@bioinfo:~/BEASTv10.5.0/bin$ cat ./treeannotator 
 #!/bin/sh
 
 if [ -z "$BEAST" ]; then
