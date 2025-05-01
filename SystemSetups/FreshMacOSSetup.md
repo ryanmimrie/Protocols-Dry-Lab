@@ -16,9 +16,6 @@ brew update && brew upgrade
 # Install useful tools
 brew install tree htop r
 
-# Optional: Install iTerm2 (a better terminal)
-brew install --cask iterm2
-
 # Download the Anaconda installer
 curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-x86_64.sh
 
