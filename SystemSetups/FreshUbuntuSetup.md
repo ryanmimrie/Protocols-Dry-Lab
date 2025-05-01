@@ -8,13 +8,12 @@ Current theme of choice is Catppuccin-Frappe.
 
 ```bash
 sudo apt update
-sudo apt upgrade
-```
-
-```bash
+sudo apt upgrade -y
 sudo apt install -y tree htop btop
+wget -P ~/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 ```bash
-curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v1.0.0/install.py | python3 -
+conda update -n base -c defaults conda
 ```
