@@ -43,8 +43,8 @@ q()
 ```
 
 ## Theme (Catppuccin-Frappe)
-- [Gnome terminal](https://github.com/catppuccin/gnome-terminal)
-- [btop](https://github.com/catppuccin/btop/tree/main)
-- [RStudio](https://github.com/catppuccin/spyder)
-- [Spyder](https://github.com/catppuccin/spyder)
-- [Firefox](https://github.com/catppuccin/firefox)
+- `Gnome terminal` [Link](https://github.com/catppuccin/gnome-terminal)
+- `btop` [Link](https://github.com/catppuccin/btop/tree/main)
+- `RStudio` [Link](https://github.com/catppuccin/spyder)
+- `Spyder` [Link](https://github.com/catppuccin/spyder)
+- `Firefox` [Link](https://github.com/catppuccin/firefox)
