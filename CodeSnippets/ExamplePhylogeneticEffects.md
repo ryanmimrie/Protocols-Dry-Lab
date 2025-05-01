@@ -5,10 +5,7 @@ The following script creates dummy example visualisations of phylogenetic effect
 ```R
 install.packages("ape")
 install.packages("viridis")
-
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("ggtree")
+install.packages("tidyverse")
 ```
 
 ## Code
@@ -16,7 +13,7 @@ BiocManager::install("ggtree")
 # Load the necessary libraries
 library(ape)
 library(ggtree)
-library(viridis)
+library(tidyverse)
 
 # Generate a random tree with 12 tips
 set.seed(123)  # Setting a seed for reproducibility
@@ -35,31 +32,38 @@ ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) +
   scale_color_viridis_c(name = "body size", option = "C") + 
   geom_text2(aes(label=node), hjust=-0.5)
 
-p_gradual <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
+p_1 <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
   scale_color_viridis_c(name = "body size", option = "C") +
   theme(legend.position = "none")
 
-ggsave("gradual.png", p_gradual, dpi = 300, width = 3, height = 3)  
+ggsave("example_phylogenetic_effects_1.png", p_1, dpi = 300, width = 3, height = 3)  
 
 traits <- c(24, 24, 24, 24, 24, 24, 81, 85, 87, 93, 91, 88,
             24, 24, 24, 24, 24, 24, 80, 84, 87, 89, 90)
 
-p_dramatic <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
+p_2 <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
   scale_color_viridis_c(name = "body size", option = "C") +
   theme(legend.position = "none")
 
-ggsave("dramatic.png", p_dramatic, dpi = 300, width = 3, height = 3)  
+ggsave("example_phylogenetic_effects_2.png", p_2, dpi = 300, width = 3, height = 3)  
 
 
 traits <- c(24, 85, 24, 24, 92, 86, 24, 24, 91, 98, 24, 96,
             24, 24, 24, 24, 24, 24, 24, 24, 24, 94, 24)
 
 
-p_snp <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
+p_3 <- ggtree(ultrametric_tree, aes(color = traits), continuous = "color", size = 2) + 
   scale_color_viridis_c(name = "body size", option = "C") +
   theme(legend.position = "none")
 
-ggsave("snp.png", p_snp, dpi = 300, width = 3, height = 3)
+ggsave("example_phylogenetic_effects_3.png", p_3, dpi = 300, width = 3, height = 3)
 ```
 
 ## Output
+
+![Phylogenetic effect 1](assets/example_phylogenetic_effects_1.png)
+
+![Phylogenetic effect 2](assets/example_phylogenetic_effects_2.png)
+
+![Phylogenetic effect 3](assets/example_phylogenetic_effects_3.png)
+
