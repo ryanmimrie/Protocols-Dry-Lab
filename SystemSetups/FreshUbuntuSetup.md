@@ -4,9 +4,7 @@
 
 The following are typical steps to set up a new Ubuntu system for bioinformatics, statistical and mathematical modelling.
 
-Current theme of choice is Catppuccin-Frappe.
-
-
+## Basic Setup
 
 ```bash
 # Update and upgrade system packages
@@ -23,8 +21,7 @@ bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
 
 # Reload shell configuration if Anaconda was added to .bashrc
 source ~/.bashrc
-```
 
-```bash
+# Update Conda to current version
 conda update -n base -c defaults conda
 ```
