@@ -11,7 +11,7 @@ The following are typical steps to set up a new Ubuntu system for bioinformatics
 sudo apt update && sudo apt upgrade -y
 
 # Install useful tools
-sudo apt install -y tree htop btop
+sudo apt install -y tree htop btop r-base
 
 # Download Anaconda installer to home directory
 wget -P ~/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
@@ -24,4 +24,16 @@ source ~/.bashrc
 
 # Update Conda to current version
 conda update -n base -c defaults conda
+
+# Open R
+R
+```
+
+```R
+install.packages('devtools')
+install.packages('tidyverse')
+install.packages('MCMCglmm')
+install.packages('patchwork')
+
+q()
 ```
