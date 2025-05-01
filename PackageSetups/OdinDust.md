@@ -1,4 +1,9 @@
 # Odin and Odin Dust (V1)
+
+![Windows](https://img.shields.io/badge/Windows-blue?logo=microsoftwindows)
+![macOS](https://img.shields.io/badge/macOS-black?logo=apple)
+![Linux](https://img.shields.io/badge/Linux-grey?logo=linux)
+
 The following installs the necessary R packages to run Odin models with Odin Dust in a separate conda environment called `Odin`.
 
 ```bash
