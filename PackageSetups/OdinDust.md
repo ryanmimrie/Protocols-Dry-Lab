@@ -7,7 +7,7 @@
 The following installs the necessary R packages to run Odin models with Odin Dust in a separate conda environment called `Odin`.
 
 ```bash
-# In a unix terminal, macOS terminal, or Anaconda prompt (Windows)
+# In a unix terminal, macOS terminal, or anaconda prompt (Windows)
 conda create -n Odin r-essentials r-base
 conda activate Odin
 
