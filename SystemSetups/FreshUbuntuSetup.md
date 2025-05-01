@@ -6,12 +6,23 @@ The following are typical steps to set up a new Ubuntu system for bioinformatics
 
 Current theme of choice is Catppuccin-Frappe.
 
+
+
 ```bash
-sudo apt update
-sudo apt upgrade -y
+# Update and upgrade system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install useful tools
 sudo apt install -y tree htop btop
+
+# Download Anaconda installer to home directory
 wget -P ~/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+
+# Run the installer (will prompt you through setup)
 bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
+
+# Reload shell configuration if Anaconda was added to .bashrc
+source ~/.bashrc
 ```
 
 ```bash
