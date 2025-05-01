@@ -60,10 +60,8 @@ ggsave("example_phylogenetic_effects_3.png", p_3, dpi = 300, width = 3, height =
 ```
 
 ## Output
+<img src="assets/example_phylogenetic_effects_1.png" width="300"/>
+<img src="assets/example_phylogenetic_effects_2.png" width="300"/>
+<img src="assets/example_phylogenetic_effects_3.png" width="300"/>
 
-![Phylogenetic effect 1](assets/example_phylogenetic_effects_1.png)
-
-![Phylogenetic effect 2](assets/example_phylogenetic_effects_2.png)
-
-![Phylogenetic effect 3](assets/example_phylogenetic_effects_3.png)
 
