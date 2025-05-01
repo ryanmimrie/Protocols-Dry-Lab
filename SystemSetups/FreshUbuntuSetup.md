@@ -41,3 +41,10 @@ install.packages('patchwork')
 
 q()
 ```
+
+## Theme (Catppuccin-Frappe)
+- [Gnome terminal](https://github.com/catppuccin/gnome-terminal)
+- [btop](https://github.com/catppuccin/btop/tree/main)
+- [RStudio](https://github.com/catppuccin/spyder)
+- [Spyder](https://github.com/catppuccin/spyder)
+- [Firefox](https://github.com/catppuccin/firefox)
