@@ -7,7 +7,6 @@ The following installs BRAKER3 using apptainer (i.e., singularity) on a unix-bas
 In a unix terminal run the following:
 
 ```bash
-# In a unix terminal
 sudo apt update && sudo apt install -y \
     build-essential \
     uuid-dev \
