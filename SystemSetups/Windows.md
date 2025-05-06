@@ -7,7 +7,7 @@ The following steps set up a **Windows system** with **Ubuntu (via WSL2)** for b
 
 ---
 
-## 🔧 Step 1: Install WSL2 with Ubuntu
+## Basic Setup
 
 Open **PowerShell as Administrator** and run:
 
@@ -19,11 +19,7 @@ wsl --install
 
 Once rebooted, launch **Ubuntu** from the Start Menu and create your Linux username and password.
 
----
-
-## ⚙️ Step 2: Basic Ubuntu Setup in WSL2
-
-In the Ubuntu terminal (within WSL2):
+In the Ubuntu terminal:
 
 ```bash
 # Update system packages
@@ -44,13 +40,8 @@ source ~/.bashrc
 
 # Update Conda (via mamba)
 mamba update -n base mamba -y
-```
 
----
-
-## 📦 Step 3: Install R Packages
-
-```bash
+# Open R
 R
 ```
 
@@ -62,34 +53,3 @@ install.packages('patchwork')
 q()
 ```
 
----
-
-## 🧪 Step 4: Install Bioinformatics Tools
-
-```bash
-# Create a new Conda environment for bioinformatics
-mamba create -n bioinf python=3.11 -y
-conda activate bioinf
-
-# Install common bioinformatics tools
-mamba install -c bioconda -c conda-forge bwa samtools spades kraken2 fastqc multiqc seqkit -y
-```
-
----
-
-## 🪟 Step 5: Recommended Windows Tools
-
-- [Windows Terminal](https://aka.ms/terminal) – modern terminal for WSL and PowerShell.
-- [Visual Studio Code](https://code.visualstudio.com/) – install the *Remote - WSL* extension for full Linux file access.
-- [RStudio Desktop](https://posit.co/download/rstudio-desktop/) – if you prefer using R natively in Windows.
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) – optional, for containerized workflows (ensure WSL2 backend is enabled).
-
----
-
-## 🧠 Notes
-
-- Store large data and reference databases **inside the WSL filesystem** (e.g., `/home/yourname/data/`) rather than on `/mnt/c/` to avoid slow I/O.
-- Access WSL files from Windows via: `\\wsl$\Ubuntu\home\yourname\`
-- To open a Linux shell quickly: use the **Ubuntu app** or a new tab in **Windows Terminal**.
-
----
