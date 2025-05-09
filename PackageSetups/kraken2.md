@@ -10,7 +10,7 @@ conda install kraken2
 ```
 
 ## Custom Databases
-It may be more efficient for some studies to use custom databases. This is especially true for studies of non-human multicellular eukaryotes, who are otherwise only present in the largest `core_nt` database.
+It may be more efficient for some studies to use custom databases. This is especially true for studies of non-human multicellular eukaryotes, which are otherwise only present in the largest `core_nt` database.
 
 First, make a directory for the custom database and download taxonomy files
 ```bash
@@ -36,7 +36,7 @@ One way to do this simply with .fna.gz files from NCBI FTP would be to add "_TAX
 This information could then be transferred to the fasta headers for each .fna.gz file in the current directory using this script:
 
 ```bash
-nano add_genomes.sh
+nano format_headers.sh
 ```
 
 Paste the following script and save:
@@ -48,26 +48,32 @@ mkdir -p custom_db_formatted
 
 for file in *.fna.gz; do
     base=$(basename "$file" .fna.gz)
-    taxid="${base##*_}"  # extract last "_" delimited part
+    taxid="${base##*_}"
 
     echo "Processing $file (taxid: $taxid)"
 
     zcat "$file" | \
     awk -v taxid="$taxid" '/^>/ {sub(/^>/,">"); print ">"$1"|kraken:taxid|"taxid} !/^>/ {print}' \
-    > "custom_db_formatted/$base"
+    > "custom_db_formatted/$base.fna"
 done
 ```
 
 Then run:
 
 ```bash
-chmod -x add_genomes.sh
-bash add_genomes.sh
+chmod +x format_headers.sh
+bash format_headers.sh
+```
+
+To add all .fna files in the current directory to the custom database, run the following:
+
+```bash
+kraken2-build --add-to-library *.fna --db custom_db
 ```
 
 Once all of the desired libraries and additional genomes have been added, the custom database can be built:
 
 ```bash
-kraken2-build --build --db custom_db
+kraken2-build --build --db custom_db --threads 8
 
 ```
