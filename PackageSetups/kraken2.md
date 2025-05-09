@@ -44,8 +44,6 @@ Paste the following script and save:
 ```bash
 #!/bin/bash
 
-mkdir -p custom_db_formatted
-
 for file in *.fna.gz; do
     base=$(basename "$file" .fna.gz)
     taxid="${base##*_}"
@@ -54,7 +52,7 @@ for file in *.fna.gz; do
 
     zcat "$file" | \
     awk -v taxid="$taxid" '/^>/ {sub(/^>/,">"); print ">"$1"|kraken:taxid|"taxid} !/^>/ {print}' \
-    > "custom_db_formatted/$base.fna"
+    > "$base.fna"
 done
 ```
 
