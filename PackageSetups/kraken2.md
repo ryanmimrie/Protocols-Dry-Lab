@@ -68,7 +68,9 @@ bash format_headers.sh
 To add all .fna files in the current directory to the custom database, run the following:
 
 ```bash
-kraken2-build --add-to-library *.fna --db custom_db
+for file in *.fna; do
+    kraken2-build --add-to-library "$file" --db custom_db
+done
 ```
 
 Once all of the desired libraries and additional genomes have been added, the custom database can be built:
