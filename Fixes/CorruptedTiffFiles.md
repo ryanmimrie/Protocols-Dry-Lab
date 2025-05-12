@@ -2,7 +2,7 @@
 
 Some `.tiff` image files, especially those modified and saved by MS Paint, may contain malformed metadata or tag structures that make them unreadable by most tools (e.g. ImageMagick, PIL, OpenCV, or tifffile). Due to not checking these malformed lines, the images remain renderable in MS Paint and can be losslessly saved as a .bmp file.
 
-This process can be automated for a large number of corrupted files using AutoHotkey. The process is slow, taking ~12 seconds per image, due to the sleep lines between commands.
+This process can be automated for a large number of corrupted files using AutoHotkey. The process is slow, taking ~12 seconds per image, due to the necessary sleep lines between commands.
 
 ## Installation
 Download AutoHotkey v1.1 from: https://www.autohotkey.com/download/
