@@ -63,6 +63,6 @@ for %%F in ("%INPUT_DIR%\*.tif*") do (
 ```
 
 ## Run script
-This process can be interfered with by any pop-up, notifications, or windows focus changes. Closing all other applications and disconnecting from the internet is recommended. Don't touch the keyboard or mouse while the process is running.
+`Warning`: This process can be interfered with by pop-up, notifications, or windows focus changes. Closing all other applications and disconnecting from the internet is recommended. Don't touch the keyboard or mouse while the process is running.
 
 To start the script, double click on launch.bat.
