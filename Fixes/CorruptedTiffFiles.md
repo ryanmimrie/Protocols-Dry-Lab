@@ -1,4 +1,4 @@
-# Fix Corrupted TIFF Files (Windows)
+# Corrupted TIFF Files (Windows)
 
 Some `.tiff` image files, especially those modified and saved by MS Paint, may contain malformed metadata or tag structures that make them unreadable by most tools (e.g. ImageMagick, PIL, OpenCV, or tifffile). Due to not checking these malformed lines, the images remain renderable in MS Paint and can be losslessly saved as a .bmp file.
 
