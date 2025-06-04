@@ -3,7 +3,7 @@
 SESSION="parallel_96"
 
 # --- Start a new detached session ---
-tmux new-session -d -s "$SESSION"
+tmux new-session -x 240 -y 60 -d -s "$SESSION" 
 
 # --- Manual Grid Construction (12x8 = 96 panes) ---
 tmux split-window -v -t "$SESSION":0.0
