@@ -2,7 +2,7 @@
 
 SESSION="parallel_32"
 
-# Start a new detached session
+# --- Start a new detached session ---
 tmux new-session -d -s "$SESSION"
 
 # --- Manual Grid Construction (4x8 = 32 panes) ---
