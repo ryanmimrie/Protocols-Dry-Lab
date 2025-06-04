@@ -6,13 +6,13 @@ SESSION="parallel_64"
 tmux new-session -d -s "$SESSION"
 
 # --- Manual Grid Construction (8x8 = 64 panes) ---
-tmux split-window -v -t test:0.0
-tmux split-window -v -t test:0.0
-tmux split-window -v -t test:0.1
-tmux split-window -v -t test:0.0
-tmux split-window -v -t test:0.4
-tmux split-window -v -t test:0.4
-tmux split-window -v -t test:0.6
+tmux split-window -v -t "$SESSION":0.0
+tmux split-window -v -t "$SESSION":0.0
+tmux split-window -v -t "$SESSION":0.1
+tmux split-window -v -t "$SESSION":0.0
+tmux split-window -v -t "$SESSION":0.4
+tmux split-window -v -t "$SESSION":0.4
+tmux split-window -v -t "$SESSION":0.6
 
 tmux split-window -h -t "$SESSION":0.0
 tmux split-window -h -t "$SESSION":0.0
