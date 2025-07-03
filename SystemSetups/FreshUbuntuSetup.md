@@ -47,6 +47,7 @@ q()
 - `RStudio` [Link](https://github.com/catppuccin/spyder)
 - `Spyder` [Link](https://github.com/catppuccin/spyder)
 - `Firefox` [Link](https://github.com/catppuccin/firefox)
+
 - `Gnome Terminal`:
 ```
 [/]
