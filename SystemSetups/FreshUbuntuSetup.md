@@ -43,8 +43,25 @@ q()
 ```
 
 ## Theme (Catppuccin-Frappe)
-- `Gnome terminal` [Link](https://github.com/catppuccin/gnome-terminal)
 - `btop` [Link](https://github.com/catppuccin/btop/tree/main)
 - `RStudio` [Link](https://github.com/catppuccin/spyder)
 - `Spyder` [Link](https://github.com/catppuccin/spyder)
 - `Firefox` [Link](https://github.com/catppuccin/firefox)
+- `Gnome Terminal`:
+```
+[/]
+background-color='rgb(48,52,70)'
+bold-color-same-as-fg=true
+cursor-background-color='rgb(198,208,245)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(48,52,70)'
+font='Monospace 10'
+foreground-color='rgb(198,208,245)'
+highlight-background-color='rgb(198,208,245)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(98,104,128)'
+palette=['rgb(81,87,109)', 'rgb(231,130,132)', 'rgb(166,209,137)', 'rgb(229,200,144)', 'rgb(140,170,238)', 'rgb(244,184,228)', 'rgb(129,200,190)', 'rgb(165,173,206)', 'rgb(98,104,128)', 'rgb(230,113,114)', 'rgb(142,199,114)', 'rgb(217,186,115)', 'rgb(123,158,240)', 'rgb(242,164,219)', 'rgb(90,191,181)', 'rgb>
+use-system-font=false
+use-theme-colors=false
+visible-name='Catppuccin-Frappe'
+```
