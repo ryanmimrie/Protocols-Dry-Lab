@@ -28,7 +28,7 @@ On the GitHub website, go to Settings → SSH and GPG keys → New SSH key. Give
 
 ### Committing Files
 #### Clone the repository
-The link to use can be found by navigating to the repository on the browser, then Code → HTTPS
+The link to use can be found by navigating to the repository on the browser, then Code → SSH
 
 ```bash
 git clone git@github.com:yourusername/repository.git
