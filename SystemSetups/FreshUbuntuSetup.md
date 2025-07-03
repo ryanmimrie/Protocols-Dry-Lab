@@ -48,7 +48,13 @@ q()
 - `Spyder` [Link](https://github.com/catppuccin/spyder)
 - `Firefox` [Link](https://github.com/catppuccin/firefox)
 
-- `Gnome Terminal`:
+#### Gnome Terminal
+Online example no longer works. Manual steps:
+
+```bash 
+nano catppuccin-frappe.conf
+```
+Copy in the following and save:
 ```
 [/]
 background-color='rgb(48,52,70)'
