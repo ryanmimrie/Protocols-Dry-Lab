@@ -72,3 +72,11 @@ use-system-font=false
 use-theme-colors=false
 visible-name='Catppuccin-Frappe'
 ```
+Find your terminal theme profile number:
+```bash
+gsettings get org.gnome.Terminal.ProfilesList list
+```
+Then load the theme settings into it:
+```bash
+dconf load /org/gnome/terminal/legacy/profiles:/:PROFILE_NUMBER/ < catppuccin-frappe.conf
+```
