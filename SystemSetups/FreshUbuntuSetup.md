@@ -44,7 +44,7 @@ q()
 
 ## Theme (Catppuccin-Frappe)
 - `btop` [Link](https://github.com/catppuccin/btop/tree/main)
-- `RStudio` [Link](https://github.com/catppuccin/spyder)
+- `RStudio` [Link](https://github.com/catppuccin/rstudio)
 - `Spyder` [Link](https://github.com/catppuccin/spyder)
 - `Firefox` [Link](https://github.com/catppuccin/firefox)
 
