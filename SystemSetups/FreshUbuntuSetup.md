@@ -30,7 +30,7 @@ wget -P ~/ https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.05.1-
 sudo apt install -y ./rstudio-2025.05.1-513-amd64.deb
 
 # Open R
-R
+sudo R
 ```
 
 ```R
