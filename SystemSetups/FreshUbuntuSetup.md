@@ -25,7 +25,9 @@ source ~/.bashrc
 # Update Conda to current version
 conda update -n base -c defaults conda
 
-# Install RStudio
+# Install R and RStudio
+sudo apt install r-base r-base-dev
+
 wget -P ~/ https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.05.1-513-amd64.deb
 sudo apt install -y ./rstudio-2025.05.1-513-amd64.deb
 
