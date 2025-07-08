@@ -26,8 +26,8 @@ source ~/.bashrc
 conda update -n base -c defaults conda
 
 # Install RStudio
-wget -P ~/ https://download1.rstudio.org/electron/focal/amd64/rstudio-2024.04.0-735-amd64.deb
-sudo apt install -y ./rstudio-2024.04.0-735-amd64.deb
+wget -P ~/ https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.05.1-513-amd64.deb
+sudo apt install -y ./rstudio-2025.05.1-513-amd64.deb
 
 # Open R
 R
