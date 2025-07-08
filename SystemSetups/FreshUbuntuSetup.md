@@ -46,7 +46,6 @@ q()
 - `btop` [Link](https://github.com/catppuccin/btop/tree/main)
 - `RStudio` [Link](https://github.com/catppuccin/rstudio)
 - `Spyder` [Link](https://github.com/catppuccin/spyder)
-- `Firefox` [Link](https://github.com/catppuccin/firefox) (Blue)
 
 #### Gnome Terminal
 Online example no longer works. Manual steps:
