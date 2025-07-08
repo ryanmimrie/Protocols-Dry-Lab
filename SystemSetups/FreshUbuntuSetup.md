@@ -36,8 +36,6 @@ sudo R
 ```R
 install.packages('devtools')
 install.packages('tidyverse')
-install.packages('MCMCglmm')
-install.packages('patchwork')
 
 q()
 ```
