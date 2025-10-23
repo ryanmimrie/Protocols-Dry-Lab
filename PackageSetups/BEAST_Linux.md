@@ -36,9 +36,11 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=$HOME/BEAST/beagle-lib/install -DBUILD_CUDA=OF
 make -j$(nproc)
 make install
 ```
-Then add beagle-cpu paths:
+Then add executables to path:
 ```bash
 export LD_LIBRARY_PATH=$HOME/BEAST/beagle-lib/install/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=$HOME/BEAST/beagle-lib/install/lib/pkgconfig:$PKG_CONFIG_PATH
+export PATH=$HOME/BEAST/BEASTv10.5.0/bin:$PATH
+export PATH=$HOME/BEAST/Tracer_v1.7.2:$PATH
 source ~/.bashrc
 ```
